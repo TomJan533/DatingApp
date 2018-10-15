@@ -37,10 +37,10 @@ namespace DatingApp.API
             }
             else
             {
-                app.UseHsts(); //wykomentowane na potem.
+                //app.UseHsts(); //wykomentowane na potem.
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseMvc();
         }
     }
