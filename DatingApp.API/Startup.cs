@@ -68,11 +68,12 @@ namespace DatingApp.API
                         var error = context.Features.Get<IExceptionHandlerFeature>();
                         if (error != null)
                         {
+                            //added helper extension
                             context.Response.AddApplicationError(error.Error.Message);
                             await context.Response.WriteAsync(error.Error.Message);
                         }
-                    })
-                })
+                    });
+                });
                 //app.UseHsts(); //temp.
             }
 
